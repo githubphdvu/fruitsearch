@@ -1,0 +1,58 @@
+
+* {
+  box-sizing: border-box;/*padding,border included in width and height(default content-box is not)*/
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to right, #ff9aa2 0%, #ff8eb1 20%, #b37cff 40%, #6699ff 60%, #99ccff 80%, #d4ebff 100%);
+}
+.search-container {
+  width: 300px;
+  margin: 10vh auto 0;/*top % of viewport,auto center horizontally,0 bottom*/
+  background: linear-gradient(to bottom right, #b57d87 0%, #8fb54e 20%, #d2b3ff 40%, #a6bfff 60%, #b3d7ff 80%, #e2f2ff 100%);
+}
+.search-field{
+  display: flex;
+  align-items: center;
+}
+input {
+  flex: 1;
+  height: 50px;
+  padding-left: 5px;
+  border-style: none;
+  border: 1px solid red;
+  background: transparent;
+}
+input:focus {
+  outline: 5px inset lightgray;
+  border: 1px solid blue;
+  border-radius: 20px;
+}
+.suggestions ul{
+  width: 300px;
+}
+.suggestions ul li {
+  list-style: none;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.suggestions ul li:hover {
+  background: orange; 
+}
+.suggestions{
+  max-height: 3000px;
+  overflow-y: hidden;
+}   
+.heading {
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Arial Black', sans-serif;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #ff758c, #ff8eb1, #8a75ff, #3da5ff, #76e2fe, #b8fffe);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
